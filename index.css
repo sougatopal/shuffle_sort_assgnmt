@@ -1,0 +1,76 @@
+body,
+        html {
+            box-sizing: border-box;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            padding: 1rem;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .box-container {
+            width: 60%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box-container div {
+            width: 33%;
+            color: #ffffff;
+            text-align: center;
+            align-self: center;
+
+        }
+        .box-container div p{
+            font-size:2.5rem;
+        }
+
+        .action-container {
+            width: 25%;
+        }
+
+        .action-container button {
+            display: block;
+            margin: 1rem;
+            padding: 1rem;
+            background-color: #72e3dc;
+            color: #ffffff;
+            box-sizing: content-box;
+            width: 50px;
+            cursor: pointer;
+            box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+        }
+
+        @media only screen and (max-width: 550px) and (min-width: 100px) {
+            .box-container div{
+                width:100%;
+                padding-left: 0.7rem;
+                border-bottom: 3px solid #ffffff;
+            }
+            .action-container,.box-container{
+                width:100%
+            }
+            .container{
+                flex-wrap: wrap-reverse;
+            }
+            .action-container{
+                display: flex;
+                justify-content: center;
+            }
+            .box-container div p{
+                color:#000000;
+                background-color: #efefef;
+                margin:0 auto;
+                padding:1rem;
+                font-size:1rem;
+                border: 1px solid #efefef;
+            }
+
+        }
