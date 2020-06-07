@@ -16,7 +16,7 @@ body,
         }
 
         .box-container {
-            width: 60%;
+            width: 70%;
             display: flex;
             flex-wrap: wrap;
         }
@@ -46,6 +46,11 @@ body,
             width: 50px;
             cursor: pointer;
             box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+        }
+        footer{
+            text-align: center;
+            font-size: 0.8rem;
+            font-style: italic;
         }
 
         @media only screen and (max-width: 550px) and (min-width: 100px) {
